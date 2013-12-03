@@ -7,6 +7,7 @@
 //
 
 #import "VPAppDelegate.h"
+#import "VPPresentingViewController.h"
 
 @implementation VPAppDelegate
 
@@ -15,6 +16,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    VPPresentingViewController *rootViewController = [[VPPresentingViewController alloc] initWithNibName:nil
+                                                                                                  bundle:nil];
+    self.window.rootViewController = rootViewController;
     [self.window makeKeyAndVisible];
     return YES;
 }

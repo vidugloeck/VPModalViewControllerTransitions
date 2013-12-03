@@ -19,6 +19,8 @@
 		12C7E7EA184D79CC00CD6357 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C7E7D2184D79CC00CD6357 /* UIKit.framework */; };
 		12C7E7F2184D79CC00CD6357 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12C7E7F0184D79CC00CD6357 /* InfoPlist.strings */; };
 		12C7E7F4184D79CC00CD6357 /* VPModalViewControllerTransitionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C7E7F3184D79CC00CD6357 /* VPModalViewControllerTransitionsTests.m */; };
+		12C7E7FF184D79FA00CD6357 /* VPPresentingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C7E7FE184D79FA00CD6357 /* VPPresentingViewController.m */; };
+		12C7E802184D7A4700CD6357 /* VPModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C7E801184D7A4700CD6357 /* VPModalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		12C7E7EF184D79CC00CD6357 /* VPModalViewControllerTransitionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VPModalViewControllerTransitionsTests-Info.plist"; sourceTree = "<group>"; };
 		12C7E7F1184D79CC00CD6357 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		12C7E7F3184D79CC00CD6357 /* VPModalViewControllerTransitionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VPModalViewControllerTransitionsTests.m; sourceTree = "<group>"; };
+		12C7E7FD184D79FA00CD6357 /* VPPresentingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPPresentingViewController.h; sourceTree = "<group>"; };
+		12C7E7FE184D79FA00CD6357 /* VPPresentingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPPresentingViewController.m; sourceTree = "<group>"; };
+		12C7E800184D7A4700CD6357 /* VPModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPModalViewController.h; sourceTree = "<group>"; };
+		12C7E801184D7A4700CD6357 /* VPModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPModalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,10 @@
 			children = (
 				12C7E7DD184D79CC00CD6357 /* VPAppDelegate.h */,
 				12C7E7DE184D79CC00CD6357 /* VPAppDelegate.m */,
+				12C7E7FD184D79FA00CD6357 /* VPPresentingViewController.h */,
+				12C7E7FE184D79FA00CD6357 /* VPPresentingViewController.m */,
+				12C7E800184D7A4700CD6357 /* VPModalViewController.h */,
+				12C7E801184D7A4700CD6357 /* VPModalViewController.m */,
 				12C7E7E0184D79CC00CD6357 /* Images.xcassets */,
 				12C7E7D5184D79CC00CD6357 /* Supporting Files */,
 			);
@@ -240,6 +250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C7E802184D7A4700CD6357 /* VPModalViewController.m in Sources */,
+				12C7E7FF184D79FA00CD6357 /* VPPresentingViewController.m in Sources */,
 				12C7E7DF184D79CC00CD6357 /* VPAppDelegate.m in Sources */,
 				12C7E7DB184D79CC00CD6357 /* main.m in Sources */,
 			);
