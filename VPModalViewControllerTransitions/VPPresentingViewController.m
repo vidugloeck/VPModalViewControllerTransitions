@@ -8,9 +8,11 @@
 
 #import "VPPresentingViewController.h"
 #import "VPModalViewController.h"
+#import "VPTransitionDelegate.h"
 
 @interface VPPresentingViewController ()
 @property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) VPTransitionDelegate *modalTransitionDelegate;
 @end
 
 @implementation VPPresentingViewController
@@ -37,6 +39,10 @@
     VPModalViewController *modalViewController = [[VPModalViewController alloc] initWithNibName:nil
                                                                                          bundle:nil];
     [modalViewController.view addGestureRecognizer:self.dismissGestureRecognizer];
+
+    //Setup transitionDelegate
+    self.modalTransitionDelegate = [[VPTransitionDelegate alloc] init];
+    modalViewController.transitioningDelegate = self.modalTransitionDelegate;
 
     [self presentViewController:modalViewController animated:YES completion:NULL];
 }
